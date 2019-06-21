@@ -1,0 +1,15 @@
+# File              : machines.yml
+# Author            : Your Name <your@mail>
+# Date              : 20.06.2019
+# Last Modified Date: 20.06.2019
+# Last Modified By  : Your Name <your@mail>
+---
+- name: mon-nexus
+  box: geerlingguy/centos7
+  lab: MyLab
+  ram: 1024
+  vcpu: 1
+  ip_addr: 192.168.11.18
+  nested: true
+  provision: base.yml
+

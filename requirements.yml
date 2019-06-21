@@ -1,0 +1,31 @@
+# File              : requirements.yml
+# Author            : Your Name <your@mail>
+# Date              : 21.06.2019
+# Last Modified Date: 21.06.2019
+# Last Modified By  : Your Name <your@mail>
+---
+#$ ansible-galaxy install kleinstuff.centos_base
+#- downloading role 'centos_base', owned by kleinstuff
+#- downloading role from https://github.com/kleinstuff/ansible-centos-base/archive/2.0.1.tar.gz
+#- extracting kleinstuff.centos_base to /home/sdelsuquet/test/roles/kleinstuff.centos_base
+#- kleinstuff.centos_base (2.0.1) was installed successfully
+# from a webserver, where the role is packaged in a tar.gz
+- src: bertvv.rh-base
+  name: rh-base
+  version: v2.3.0
+
+- src: kleinstuff.centos_base
+  name: centos_base
+  version: 2.0.1
+
+- src: geerlingguy.java
+  nam: java
+  version: 1.9.5
+
+- src: geerlingguy.apache
+  nam: apache
+  version: 3.0.3
+
+- src: ansible-ThoTeam.nexus3-oss
+  name: nexus3
+  version: v2.4.2
